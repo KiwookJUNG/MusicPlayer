@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNA-5r-xfk">
-                                <rect key="frame" x="107" y="213.5" width="200" height="200"/>
+                                <rect key="frame" x="87.666666666666686" y="184.33333333333337" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="EBD-Pu-IFd"/>
                                     <constraint firstAttribute="width" constant="200" id="EsV-Vp-SIC"/>
@@ -29,13 +29,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHU-oQ-auT">
-                                <rect key="frame" x="169" y="433.5" width="76" height="21"/>
+                                <rect key="frame" x="149.66666666666666" y="404.33333333333331" width="76" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4js-7M-iK6">
-                                <rect key="frame" x="14" y="470.5" width="386" height="31"/>
+                                <rect key="frame" x="14" y="441.33333333333331" width="347" height="31"/>
                                 <color key="tintColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="DKh-Bt-a2E"/>
@@ -50,6 +50,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4js-7M-iK6" secondAttribute="trailing" constant="16" id="MYN-M6-bEq"/>
                             <constraint firstItem="SNA-5r-xfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wk9-wv-txS"/>
                             <constraint firstItem="4js-7M-iK6" firstAttribute="top" secondItem="LHU-oQ-auT" secondAttribute="bottom" constant="16" id="XMB-8b-kBL"/>
+                            <constraint firstItem="4js-7M-iK6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tK3-Tm-97p"/>
                             <constraint firstItem="LHU-oQ-auT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x3R-9k-I7A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
